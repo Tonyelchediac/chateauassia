@@ -597,9 +597,9 @@ ul {
 
 .restaurant-details {
     display: flex;
-    gap: var(--space-md);
+    gap: var(--space-sm);
     margin-top: var(--space-md);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .restaurant-details i {
@@ -663,8 +663,7 @@ ul {
     min-height: 500px;
     display: flex;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/wedding-hero.jpg') center/cover no-repeat;
-    color: var(--white);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/wedding-hero.jpg') center/cover no-repeat;
     margin-bottom: var(--space-xxl);
 }
 
@@ -677,11 +676,13 @@ ul {
 .weddings-header h2 {
     font-size: 3rem;
     margin-bottom: var(--space-sm);
+    color: var(--light);
 }
 
 .weddings-header p {
     font-size: 1.5rem;
     font-weight: 300;
+    color: var(--light);
 }
 
 .weddings-content {
@@ -871,10 +872,13 @@ ul {
     transition: var(--transition);
 }
 
-.social-links a:hover {
+.social-links a:hover{
     background-color: var(--secondary);
-    color: var(--white);
     transform: translateY(-3px);
+}
+
+.social-links a:hover i{
+    color: var(--light);
 }
 
 .contact-form {
@@ -1181,7 +1185,7 @@ form textarea {
     
     .nav-menu {
         position: fixed;
-        top: 55px;
+        top: 80px;
         left: -100%;
         width: 100%;
         background-color: var(--primary);
@@ -1189,6 +1193,10 @@ form textarea {
         text-align: center;
         transition: var(--transition);
         padding: var(--space-xl) 0;
+    }
+
+    .header.scrolled .nav-menu {
+        top: 55px;
     }
     
     .nav-menu.active {
